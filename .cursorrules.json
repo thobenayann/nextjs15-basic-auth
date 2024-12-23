@@ -1,0 +1,150 @@
+{
+    "projectType": "nextjs",
+    "language": "typescript",
+    "frameworks": ["react", "nextjs"],
+    "libraries": [
+        "shadcn-ui",
+        "radix-ui",
+        "tailwindcss",
+        "prisma",
+        "zod",
+        "vercel-ai-sdk"
+    ],
+    "database": "postgresql",
+    "rules": {
+        "general": [
+            {
+                "description": "Utiliser TypeScript pour toutes les fonctionnalités.",
+                "enforce": "typescript-only"
+            },
+            {
+                "description": "Favoriser les composants fonctionnels avec hooks.",
+                "enforce": "functional-components-only"
+            },
+            {
+                "description": "Ne jamais utiliser de type 'any'.",
+                "enforce": "no-any-type"
+            },
+            {
+                "description": "Respecter les conventions de nommage modernes.",
+                "enforce": "modern-naming-conventions"
+            }
+        ],
+        "react": [
+            {
+                "description": "Favoriser les React Server Components (RSC) lorsque possible.",
+                "enforce": "prefer-react-server-components"
+            },
+            {
+                "description": "Minimiser les 'use client' directives.",
+                "enforce": "limit-use-client"
+            },
+            {
+                "description": "Utiliser Suspense pour la gestion des opérations asynchrones.",
+                "enforce": "use-suspense-for-async"
+            },
+            {
+                "description": "Implémenter des limites d'erreur avec des Error Boundaries.",
+                "enforce": "error-boundaries-required"
+            },
+            {
+                "description": "Favoriser les composants fonctionnels avec hooks.",
+                "enforce": "functional-components-only"
+            },
+            {
+                "description": "Minimser l'utilisation des useEffect",
+                "enforce": "minimize-use-effect"
+            }
+        ],
+        "nextjs": [
+            {
+                "description": "Optimiser pour les performances et les Web Vitals.",
+                "enforce": "optimize-web-vitals"
+            },
+            {
+                "description": "Utiliser les bonnes pratiques pour la gestion des données (fetching, caching).",
+                "enforce": "best-practices-data-fetching"
+            },
+            {
+                "description": "Mettre en place une gestion des routes sécurisée.",
+                "enforce": "secure-routing"
+            },
+            {
+                "description": "Utiliser Prisma pour toutes les interactions avec la base de données.",
+                "enforce": "prisma-database-layer"
+            }
+        ],
+        "ui": [
+            {
+                "description": "Utiliser Tailwind CSS pour toutes les mises en page et styles.",
+                "enforce": "tailwindcss-only"
+            },
+            {
+                "description": "Favoriser l'utilisation des composants Shadcn UI et Radix UI.",
+                "enforce": "prefer-shadcn-radix"
+            },
+            {
+                "description": "Suivre les meilleures pratiques en matière d'accessibilité (ARIA, WCAG 2.1).",
+                "enforce": "accessibility-compliance"
+            },
+            {
+                "description": "Optimiser les animations et transitions avec Tailwind CSS.",
+                "enforce": "tailwindcss-transitions"
+            },
+            {
+                "description": "Favoriser une approche mobile-firest responsive avec Tailwind CSS.",
+                "enforce": "mobile-first-responsive"
+            }
+        ],
+        "vercel-ai-sdk": [
+            {
+                "description": "Utiliser les composants server-side pour les intégrations AI.",
+                "enforce": "server-side-ai-integration"
+            },
+            {
+                "description": "Limiter les directives 'use client' dans les composants utilisant le SDK AI.",
+                "enforce": "minimize-use-client-sdk"
+            },
+            {
+                "description": "Suivre les exemples du SDK Vercel AI pour les outils et les hooks.",
+                "enforce": "vercel-ai-sdk-examples"
+            }
+        ],
+        "performance": [
+            {
+                "description": "Optimiser les images (formats modernes, lazy loading).",
+                "enforce": "image-optimization"
+            },
+            {
+                "description": "Utiliser `next/font` pour optimiser les polices.",
+                "enforce": "font-optimization"
+            },
+            {
+                "description": "Configurer le cache pour les routes et les données.",
+                "enforce": "cache-configuration"
+            },
+            {
+                "description": "Assurer le suivi et l'optimisation des Core Web Vitals.",
+                "enforce": "monitor-core-web-vitals"
+            }
+        ],
+        "typescript": [
+            {
+                "description": "Suivre les bonnes pratiques de typage strict.",
+                "enforce": "strict-typescript"
+            },
+            {
+                "description": "Utiliser des interfaces au lieu des types lorsqu'approprié.",
+                "enforce": "prefer-interfaces"
+            },
+            {
+                "description": "Éviter les enums au profit des maps constantes.",
+                "enforce": "no-enums"
+            },
+            {
+                "description": "Utiliser l'opérateur `satisfies` pour valider les types.",
+                "enforce": "use-satisfies-operator"
+            }
+        ]
+    }
+}
