@@ -29,7 +29,13 @@ npm install zod
 ### Installation de Shadcn-ui
 
 ```bash
-npm install shadcn-ui@latest
+npx shadcn@latest init
+```
+
+#### Start adding new components
+
+```bash
+npx shadcn@latest add <component-name>
 ```
 
 ### Installation de Prisma
